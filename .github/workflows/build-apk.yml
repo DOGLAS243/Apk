@@ -13,6 +13,9 @@ jobs:
       - name: Baixar arquivos
         uses: actions/checkout@v4
 
+      - name: Extrair projeto Android
+        run: unzip -o VELTRIX_ANDROID_DEMO_SEM_PASTA.zip -d .
+
       - name: Instalar Java
         uses: actions/setup-java@v4
         with:
